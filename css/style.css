@@ -4,14 +4,15 @@
 }
 
 .gallery {
-  max-width: 1240px;
+  max-width: 1440px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 24px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 12px;
 }
 
 .gallery-image {
