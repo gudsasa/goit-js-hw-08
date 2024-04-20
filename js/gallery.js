@@ -65,7 +65,6 @@ const images = [
 ];
 
 const imageGalleryEl = document.querySelector('.gallery');
-
 const imagesEl = images
   .map(
     image =>
@@ -83,7 +82,6 @@ const imagesEl = images
   .join('');
 
 imageGalleryEl.insertAdjacentHTML('beforeend', imagesEl);
-
 imageGalleryEl.addEventListener('click', function (event) {
   event.preventDefault();
   if (event.target.nodeName !== 'IMG') return;
@@ -91,6 +89,5 @@ imageGalleryEl.addEventListener('click', function (event) {
   const instance = basicLightbox.create(`
    <img src="${event.target.dataset.source}" alt="${event.target.alt}"/>
 `);
-
   instance.show();
 });
